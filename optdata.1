@@ -199,7 +199,7 @@ optdata \- create optimal search data structures in C
 \&    # There are 145 unique names, most for Common, and the rest pretty evenly
 \&    # distributed.
 \&    #
-\&    # There are 69297 (0x10EB1) entries, to a simple array lookup table or
+\&    # There are 69297 (0x10EB1) entries, so a simple array lookup table or
 \&    # perfect hash would be massive overkill, when we only have 145 possible
 \&    # results.
 \&
@@ -212,7 +212,7 @@ Creates an optimal compile-time data structure to search in known data, as C
 source code.  Very similar to gperf, but not as limited; perfect hashes are
 not always the best datastructures to search in.
 .PP
-Accepts a list integers, ranges of integers or strings as input, which to
+Accepts a list of integers, ranges of integers or strings as input, which to
 search for. Detects hex numbers and ranges seperated by \f(CW\*(C`\-\*(C'\fR or \f(CW\*(C`..\*(C'\fR automatically.
 .PP
 Tries various nested arrays, like 1\-way, 2\-way, 3\-way, 4\-way arrays, with
