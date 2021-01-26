@@ -4,7 +4,7 @@
 
 =head1 NAME
 
-optdata - create optimal search data structures in C
+optdata - create optimal point lookup data structures in C
 
 =head1 SYNOPSIS
 
@@ -73,9 +73,11 @@ optdata - create optimal search data structures in C
 
 =head1 DESCRIPTION
 
-Creates an optimal compile-time data structure to search in known data, as C
+Creates an optimal compile-time data structure to single points in fixed and known data, as C
 source code.  Very similar to L<gperf>, but not as limited; perfect hashes are
-not always the best datastructures to search in.
+not always the best datastructures to search in. In the literature it is sometimes called 
+learned index for point searches, but there also exist problems for range and nearest 
+neighbor searches.
 
 Accepts a list of integers, ranges of integers or strings as input, which to
 search for. Detects hex numbers and ranges seperated by C<-> or C<..> automatically.
